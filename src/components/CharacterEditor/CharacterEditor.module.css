@@ -5,6 +5,8 @@
 }
 
 .maxWidthWrapper {
+  z-index: 1;
+  position: relative;
 }
 
 .header {
@@ -35,6 +37,18 @@
 
 .controlColumn {
   width: 50%;
+}
+@media (max-width: 640px) {
+  .controlColumn {
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+  }
+  .controlColumnWrapper {
+    display: block;
+    margin-left: -32px;
+    margin-right: -32px;
+  }
 }
 
 .background {
