@@ -30,3 +30,12 @@ body {
   padding: 0;
   border: 0;
 }
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
